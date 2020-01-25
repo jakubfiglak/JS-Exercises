@@ -2,6 +2,30 @@ const buttons = document.querySelectorAll('.btn');
 const modalOuter = document.querySelector('.modal-outer');
 const modalInner = document.querySelector('.modal-inner');
 
+// Close modal function
+const closeModal = () => modalOuter.classList.remove('open');
+
+// Close modal with an 'escape' key
+window.addEventListener('keyup', e => {
+  if (e.key === 'Escape') {
+    closeModal();
+  }
+});
+
+// Close modal with a 'close' icon
+const closeModalOnIconClick = () => {
+  const closeIcon = modalInner.querySelector('.fa-times');
+
+  closeIcon.addEventListener('click', closeModal);
+};
+
+// Close modal with a click outside the box
+modalOuter.addEventListener('click', e => {
+  if (!e.target.closest('.modal-inner')) {
+    closeModal();
+  }
+});
+
 // Open modal function
 const openModal = e => {
   const button = e.currentTarget;
@@ -13,7 +37,7 @@ const openModal = e => {
 
   modalInner.innerHTML = `
     <div class="card">
-    <i class="fas fa-times fa-2x"></i>
+    <button class="btn-icon"><i class="fas fa-times fa-2x"></i></button>
     <h2>${title}</h2>    
     <img src=${imgSrc.replace('200', '400')} alt=${title} photo/>
     <p>${text}</p>
@@ -21,26 +45,8 @@ const openModal = e => {
     `;
 
   modalOuter.classList.add('open');
+  closeModalOnIconClick();
 };
 
 // Open modal with a button
 buttons.forEach(button => button.addEventListener('click', openModal));
-
-// Close modal function
-const closeModal = () => modalOuter.classList.remove('open');
-
-// Close modal with an 'escape' key
-window.addEventListener('keyup', e => {
-  if (e.key === 'Escape') {
-    closeModal();
-  }
-});
-
-// TODO:  Close modal with a 'close' icon (not sure how to select an element that is not yet rendered to the page)
-
-// Close modal with click outside the box
-modalOuter.addEventListener('click', e => {
-  if (!e.target.closest('.modal-inner')) {
-    closeModal();
-  }
-});
