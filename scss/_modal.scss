@@ -1,4 +1,16 @@
 .modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: transparent;
+  color: $light-gray;
+
+  &::backdrop {
+    background: $primary-color-transparent;
+  }
+
   &-outer {
     position: fixed;
     width: 100%;
