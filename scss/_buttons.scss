@@ -23,6 +23,15 @@
     border: 1px solid #fff;
   }
 
+  &[disabled] {
+    opacity: 0.2;
+  }
+
+  &[disabled]:hover {
+    opacity: 0.2;
+    cursor: auto;
+  }
+
   &:hover {
     opacity: 0.7;
   }

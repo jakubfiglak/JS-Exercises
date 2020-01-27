@@ -1,0 +1,13 @@
+// Scroll div for intersection observer
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 600px;
+  overflow-y: scroll;
+  background: $light-gray;
+  color: $dark-color;
+  padding: 2rem;
+  margin: 2rem;
+}

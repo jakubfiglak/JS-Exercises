@@ -93,6 +93,11 @@ p {
   .btn-secondary {
     background: transparent;
     border: 1px solid #fff; }
+  .btn[disabled] {
+    opacity: 0.2; }
+  .btn[disabled]:hover {
+    opacity: 0.2;
+    cursor: auto; }
   .btn:hover {
     opacity: 0.7; }
 
@@ -116,3 +121,14 @@ p {
     right: 1.5rem;
     top: 1.5rem;
     color: #cbcfd4; }
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 600px;
+  overflow-y: scroll;
+  background: #cbcfd4;
+  color: #30363d;
+  padding: 2rem;
+  margin: 2rem; }
