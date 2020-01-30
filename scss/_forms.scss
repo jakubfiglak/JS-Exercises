@@ -1,0 +1,13 @@
+input[type='text'] {
+  font-family: $primary-font;
+  font-size: 1.4rem;
+  color: $dark-color;
+  border-radius: 2px;
+  border: none;
+  padding: 5px;
+  margin-right: 10px;
+
+  &:focus {
+    outline-color: $primary-color;
+  }
+}
