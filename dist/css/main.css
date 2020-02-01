@@ -149,6 +149,37 @@ p {
   border-radius: 10px;
   background: #3c444c; }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  align-items: stretch;
+  margin: 2rem; }
+  .gallery img {
+    width: 100%;
+    border: 2px solid #f27a54; }
+
+.image-details {
+  display: grid;
+  grid-template-columns: 5rem 1fr 5rem;
+  background: #3c444c;
+  grid-gap: 2rem; }
+  .image-details figure {
+    text-align: center;
+    padding: 2rem 0; }
+    .image-details figure img {
+      max-width: 50vw; }
+    .image-details figure h2 {
+      margin: 1rem 0; }
+  .image-details button {
+    background: transparent;
+    border: none;
+    color: #cbcfd4;
+    cursor: pointer;
+    transition: all 0.2s; }
+    .image-details button:hover {
+      background: #747d88; }
+
 input[type='text'] {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;

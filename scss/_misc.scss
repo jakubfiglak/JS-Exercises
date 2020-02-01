@@ -21,3 +21,50 @@
   background: $dark-gray;
   // color: $da;
 }
+
+// Image gallery
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  align-items: stretch;
+  margin: 2rem;
+
+  img {
+    width: 100%;
+    border: 2px solid $primary-color;
+  }
+}
+
+.image-details {
+  display: grid;
+  grid-template-columns: 5rem 1fr 5rem;
+  background: $dark-gray;
+  grid-gap: 2rem;
+
+  figure {
+    text-align: center;
+    padding: 2rem 0;
+
+    img {
+      max-width: 50vw;
+    }
+
+    h2 {
+      margin: 1rem 0;
+    }
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    color: $light-gray;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background: $middle-gray;
+    }
+  }
+}

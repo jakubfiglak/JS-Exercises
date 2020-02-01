@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/40036eafc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+      <img
+        src="./img/270-camo-sunset.jpg"
+        alt="Photo no. 1"
+        tabindex="0"
+        title="This is the title of the image"
+        data-description="This is the description of the image no. 1"
+        class="gallery-img"
+      />
+      <img
+        src="./img/canada-goose.jpg"
+        alt="Photo no. 2"
+        tabindex="0"
+        title="This is the title of the image"
+        data-description="This is the description of the image no. 2"
+        class="gallery-img"
+      />
+      <img
+        src="./img/hondo.jpg"
+        alt="Photo no. 3"
+        tabindex="0"
+        title="This is the title of the image"
+        data-description="This is the description of the image no. 3"
+        class="gallery-img"
+      />
+      <img
+        src="./img/kith-hoodie.jpg"
+        alt="Photo no. 4"
+        tabindex="0"
+        title="This is the title of the image"
+        data-description="This is the description of the image no. 4"
+        class="gallery-img"
+      />
+      <img
+        src="./img/naked-and-famous-denim.jpg"
+        alt="Photo no. 5"
+        tabindex="0"
+        title="This is the title of the image"
+        data-description="This is the description of the image no. 5"
+        class="gallery-img"
+      />
+      <img
+        src="./img/nudie-belt.jpg"
+        alt="Photo no. 6"
+        tabindex="0"
+        title="This is the title of the image"
+        data-description="This is the description of the image no. 6"
+        class="gallery-img"
+      />
+      <img
+        src="./img/ultra-boost.jpg"
+        alt="Photo no. 7"
+        tabindex="0"
+        title="This is the title of the image"
+        data-description="This is the description of the image no. 7"
+        class="gallery-img"
+      />
+      <img
+        src="./img/vapormax.jpg"
+        alt="Photo no. 8"
+        tabindex="0"
+        title="This is the title of the image"
+        data-description="This is the description of the image no. 8"
+        class="gallery-img"
+      />
+    </div>
+
+    <div class="modal-outer container">
+      <div class="modal-inner">
+        <div class="image-details">
+          <button class="prev" aria-label="Previous Photo">
+            <i class="fas fa-caret-left fa-3x"></i>
+          </button>
+          <figure>
+            <img src="./img/ultra-boost.jpg" />
+            <figcaption>
+              <h2>Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorem ducimus ea atque cumque amet tenetur impedit voluptates
+                ut unde reiciendis.
+              </p>
+            </figcaption>
+          </figure>
+          <button class="next" aria-label="Previous Photo">
+            <i class="fas fa-caret-right fa-3x"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
