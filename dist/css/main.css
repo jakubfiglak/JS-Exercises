@@ -203,3 +203,40 @@ input[type='text'] {
 input[type='checkbox']:checked + .list-description {
   opacity: 0.5;
   text-decoration: line-through; }
+
+.slides {
+  width: 80vw;
+  height: 500px;
+  background: #3c444c;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #f27a54;
+  margin: 2rem 0; }
+  .slides .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    z-index: -1; }
+  .slides .current {
+    transform: translateX(0);
+    z-index: 5; }
+  .slides .prev {
+    transform: translateX(-100%);
+    z-index: 5; }
+  .slides .next {
+    transform: translateX(100%);
+    z-index: 5; }
+  .slides .next + .slide {
+    transform: translateX(200%); }
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  margin: 0 10rem; }
