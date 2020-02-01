@@ -9,3 +9,8 @@
     border-bottom: 1px solid $primary-color-transparent;
   }
 }
+
+input[type='checkbox']:checked + .list-description {
+  opacity: 0.5;
+  text-decoration: line-through;
+}

@@ -168,3 +168,7 @@ input[type='text'] {
     align-items: center;
     padding: 1.4rem;
     border-bottom: 1px solid rgba(242, 122, 84, 0.7); }
+
+input[type='checkbox']:checked + .list-description {
+  opacity: 0.5;
+  text-decoration: line-through; }
